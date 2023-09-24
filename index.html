@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slack is your productivity platform | Slack</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/b817004d3c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="navbarInitial">
+        <div id="logoAndItems">
+          <!-- Slack logo -->
+
+          <div>
+            <a class="slackLogoWhite" href="https://slack.com/intl/en-in/"
+              ><svg
+                height="25"
+                width="100"
+                class="c-slacklogo--white"
+                viewBox="0 0 240 60"
+                xmlns="http://www.w3.org/2000/svg"
+                shape-rendering="geometricPrecision"
+              >
+                <title>Slack</title>
+                <g fill="none">
+                  <path
+                    d="m75.663 47.477 2.929-6.846c3.207 2.375 7.39 3.632 11.574 3.632 3.068 0 5.02-1.187 5.02-3.003-.07-5.03-18.477-1.118-18.617-13.764-.07-6.427 5.648-11.387 13.737-11.387 4.81 0 9.622 1.188 13.038 3.913l-2.737 6.992c-3.143-2.021-7.025-3.43-10.72-3.43-2.51 0-4.184 1.187-4.184 2.725.07 4.96 18.618 2.235 18.827 14.322 0 6.567-5.579 11.178-13.528 11.178-5.856 0-11.225-1.397-15.34-4.332m116.629-9.325a8.498 8.498 0 0 1 -7.405 4.33c-4.698 0-8.506-3.816-8.506-8.523s3.808-8.523 8.506-8.523a8.498 8.498 0 0 1 7.405 4.33l8.143-4.52c-3.05-5.451-8.868-9.137-15.548-9.137-9.839 0-17.815 7.991-17.815 17.85 0 9.858 7.976 17.85 17.815 17.85 6.68 0 12.498-3.686 15.548-9.137zm-82.477 12.958h10.18v-49.86h-10.179zm95.761-49.86v49.86h10.18v-14.938l12.063 14.938h13.012l-15.34-17.746 14.224-16.559h-12.454l-11.505 13.767v-29.322zm-54.218 15.557v4.053c-1.673-2.795-5.787-4.751-10.11-4.751-8.925 0-15.967 7.895-15.967 17.815s7.042 17.885 15.967 17.885c4.323 0 8.437-1.956 10.11-4.751v4.052h10.18v-34.303zm0 21.414c-1.464 2.445-4.532 4.26-7.948 4.26-4.699 0-8.507-3.815-8.507-8.522s3.808-8.523 8.507-8.523c3.416 0 6.484 1.886 7.948 4.4z"
+                    fill="#ffffff"
+                  ></path>
+                  <path
+                    d="m21.902.148c-3.299 0-5.973 2.68-5.973 5.985a5.979 5.979 0 0 0 5.973 5.985h5.974v-5.985a5.98 5.98 0 0 0 -5.974-5.985m0 15.96h-15.929c-3.299 0-5.973 2.68-5.973 5.986 0 3.305 2.674 5.985 5.973 5.985h15.93c3.298 0 5.973-2.68 5.973-5.985 0-3.306-2.675-5.986-5.974-5.986"
+                    fill="#44BEDF"
+                  ></path>
+                  <path
+                    d="m59.734 22.094c0-3.306-2.675-5.986-5.974-5.986s-5.973 2.68-5.973 5.986v5.985h5.973a5.98 5.98 0 0 0 5.974-5.985m-15.929 0v-15.961a5.98 5.98 0 0 0 -5.974-5.985c-3.299 0-5.973 2.68-5.973 5.985v15.96c0 3.307 2.674 5.987 5.973 5.987a5.98 5.98 0 0 0 5.974-5.985"
+                    fill="#2EB67D"
+                  ></path>
+                  <path
+                    d="m37.831 60a5.98 5.98 0 0 0 5.974-5.985 5.98 5.98 0 0 0 -5.974-5.985h-5.973v5.985c0 3.305 2.674 5.985 5.973 5.985m0-15.96h15.93c3.298 0 5.973-2.68 5.973-5.986a5.98 5.98 0 0 0 -5.974-5.985h-15.929c-3.299 0-5.973 2.68-5.973 5.985a5.979 5.979 0 0 0 5.973 5.985"
+                    fill="#ECB22E"
+                  ></path>
+                  <path
+                    d="m0 38.054a5.979 5.979 0 0 0 5.973 5.985 5.98 5.98 0 0 0 5.974-5.985v-5.985h-5.974c-3.299 0-5.973 2.68-5.973 5.985m15.929 0v15.96c0 3.306 2.674 5.986 5.973 5.986a5.98 5.98 0 0 0 5.974-5.985v-15.961a5.979 5.979 0 0 0 -5.974-5.985c-3.299 0-5.973 2.68-5.973 5.985"
+                    fill="#E01E5A"
+                  ></path>
+                </g>
+              </svg>
+            </a>
+            <a class="slackLogoBlack" href="https://slack.com/intl/en-in/"
+              ><svg
+                width="100"
+                class="c-slacklogo--color"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 240 60"
+                shape-rendering="geometricPrecision"
+              >
+                <title>Slack</title>
+                <path
+                  d="m75.663 47.477 2.929-6.846c3.207 2.375 7.39 3.632 11.574 3.632 3.068 0 5.02-1.187 5.02-3.003-.07-5.03-18.477-1.118-18.617-13.764-.07-6.427 5.648-11.387 13.737-11.387 4.81 0 9.622 1.188 13.038 3.913l-2.737 6.992c-3.143-2.021-7.025-3.43-10.72-3.43-2.51 0-4.184 1.187-4.184 2.725.07 4.96 18.618 2.235 18.827 14.322 0 6.567-5.579 11.178-13.528 11.178-5.856 0-11.225-1.397-15.34-4.332m116.629-9.325a8.498 8.498 0 0 1 -7.405 4.33c-4.698 0-8.506-3.816-8.506-8.523s3.808-8.523 8.506-8.523a8.498 8.498 0 0 1 7.405 4.33l8.143-4.52c-3.05-5.451-8.868-9.137-15.548-9.137-9.839 0-17.815 7.991-17.815 17.85 0 9.858 7.976 17.85 17.815 17.85 6.68 0 12.498-3.686 15.548-9.137zm-82.477 12.958h10.18v-49.86h-10.179zm95.761-49.86v49.86h10.18v-14.938l12.063 14.938h13.012l-15.34-17.746 14.224-16.559h-12.454l-11.505 13.767v-29.322zm-54.218 15.557v4.053c-1.673-2.795-5.787-4.751-10.11-4.751-8.925 0-15.967 7.895-15.967 17.815s7.042 17.885 15.967 17.885c4.323 0 8.437-1.956 10.11-4.751v4.052h10.18v-34.303zm0 21.414c-1.464 2.445-4.532 4.26-7.948 4.26-4.699 0-8.507-3.815-8.507-8.522s3.808-8.523 8.507-8.523c3.416 0 6.484 1.886 7.948 4.4z"
+                ></path>
+                <path
+                  d="m21.902.148c-3.299 0-5.973 2.68-5.973 5.985a5.979 5.979 0 0 0 5.973 5.985h5.974v-5.985a5.98 5.98 0 0 0 -5.974-5.985m0 15.96h-15.929c-3.299 0-5.973 2.68-5.973 5.986 0 3.305 2.674 5.985 5.973 5.985h15.93c3.298 0 5.973-2.68 5.973-5.985 0-3.306-2.675-5.986-5.974-5.986"
+                  fill="#44BEDF"
+                ></path>
+                <path
+                  d="m59.734 22.094c0-3.306-2.675-5.986-5.974-5.986s-5.973 2.68-5.973 5.986v5.985h5.973a5.98 5.98 0 0 0 5.974-5.985m-15.929 0v-15.961a5.98 5.98 0 0 0 -5.974-5.985c-3.299 0-5.973 2.68-5.973 5.985v15.96c0 3.307 2.674 5.987 5.973 5.987a5.98 5.98 0 0 0 5.974-5.985"
+                  fill="#2EB67D"
+                ></path>
+                <path
+                  d="m37.831 60a5.98 5.98 0 0 0 5.974-5.985 5.98 5.98 0 0 0 -5.974-5.985h-5.973v5.985c0 3.305 2.674 5.985 5.973 5.985m0-15.96h15.93c3.298 0 5.973-2.68 5.973-5.986a5.98 5.98 0 0 0 -5.974-5.985h-15.929c-3.299 0-5.973 2.68-5.973 5.985a5.979 5.979 0 0 0 5.973 5.985"
+                  fill="#ECB22E"
+                ></path>
+                <g>
+                  <path
+                    d="m0 38.054a5.979 5.979 0 0 0 5.973 5.985 5.98 5.98 0 0 0 5.974-5.985v-5.985h-5.974c-3.299 0-5.973 2.68-5.973 5.985m15.929 0v15.96c0 3.306 2.674 5.986 5.973 5.986a5.98 5.98 0 0 0 5.974-5.985v-15.961a5.979 5.979 0 0 0 -5.974-5.985c-3.299 0-5.973 2.68-5.973 5.985"
+                    fill="#E01E5A"
+                  ></path>
+                </g>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Nav items -->
+          <div>
+            <a href="#"
+              >Features
+              <i class="fa-angle-down fa-solid" style="color: white"></i>
+            </a>
+            <a href="#"
+              >Solutions
+              <i class="fa-angle-down fa-solid" style="color: white"></i
+            ></a>
+            <a href="#">Enterprise</a>
+            <a href="#"
+              >Resources
+              <i class="fa-angle-down fa-solid" style="color: white"></i
+            ></a>
+            <a href="#">Pricing</a>
+          </div>
+        </div>
+
+        <div id="actionButtons">
+          <i class="fa-solid fa-magnifying-glass" style="color: white"></i>
+          <a href="#">Sign in</a>
+          <a
+            style="
+              background-color: #541554;
+              color: white;
+              box-shadow: inset 0 0 0 1px #fff;
+            "
+            id="demo"
+            href="#"
+            >TALK TO SALES</a
+          >
+          <a id="demo" href="#">TRY FOR FREE</a>
+        </div>
+      </div>
+      <div class="headerSection">
+        <div>
+          <video
+            loop
+            autoplay
+            src="/assets/vid/Team discussing work in the Slack app.webm"
+          ></video>
+        </div>
+        <div class="headerSectionText">
+          <h1>Made for people</h1>
+          <h1 style="color: #ecb22f">Built for productivity</h1>
+          <p>
+            Connect the right people, find anything that you need and automate
+            the rest. That’s work in Slack, your productivity platform.
+          </p>
+          <div>
+            <a class="headerButton" href="#">SIGN UP WITH EMAIL ADDRESS</a>
+            <a
+              style="
+                background-color: #4285f4;
+                color: white;
+                box-shadow: none;
+                padding: 1vw 0.5vw;
+              "
+              class="headerButton"
+              href="#"
+              ><img
+                src="/assets/img/google.jpg"
+                alt="google"
+                width="30px"
+                style="vertical-align: middle; margin-right: 10px"
+              />SIGN UP WITH GOOGLE</a
+            >
+          </div>
+          <p style="margin: 20px 0">
+            <span style="font-weight: bold; font-size: inherit">
+              Slack is free to try
+            </span>
+            for as long as you like
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <section class="mainContent">
+      <section class="mainContentLogos">
+        <h1 style="padding: 10px">TRUSTED BY COMPANIES ALL OVER THE WORLD</h1>
+        <div
+          style="
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            width: 70vw;
+            margin: auto;
+          "
+        >
+          <img src="/assets/img/logos/logo-seek@2x.png" alt="seek" /><img
+            src="/assets/img/logos/logo-xero@2x.png"
+            alt="xero"
+          /><img src="/assets/img/logos/rea@2x.png" alt="rea" /><img
+            src="/assets/img/logos/rmit@2x.png"
+            alt="rmit"
+          /><img src="/assets/img/logos/logo-ibm@2x.png" alt="ibm" /><img
+            src="/assets/img/logos/deliveroo@2x.png"
+            alt="deliveroo"
+          />
+        </div>
+      </section>
+      <!-- Video 1 -->
+      <section class="collaborationSections">
+        <div>
+          <video
+            autoplay
+            loop
+            src="/assets/vid/Using the Workday integration to quickly file an expense report in the Slack app.webm"
+          ></video>
+        </div>
+        <div>
+          <h1>Move faster with your tools in one place</h1>
+          <p>
+            Automate away routine tasks with the power of generative AI and
+            simplify your workflow with all your favourite apps ready to go in
+            Slack.
+          </p>
+          <a href="#"
+            >Learn more about the Slack platform
+            <i class="fa-solid fa-arrow-right fa-blue"></i
+          ></a>
+        </div>
+      </section>
+      <!-- Video 2 -->
+      <section class="collaborationSections">
+        <div style="margin-left: -4vw">
+          <video
+            autoplay
+            loop
+            src="/assets/vid/A user starting a huddle and recording a video clip with the Slack app.webm"
+          ></video>
+        </div>
+        <div style="margin-left: -4vw; margin-right: 5vw">
+          <h1>Choose how you want to work</h1>
+          <p>
+            In Slack, you’ve got all the flexibility to work when, where and how
+            it’s best for you. You can easily chat, send audio and video clips,
+            or join a huddle to talk things through live.
+          </p>
+          <a href="#"
+            >Learn more about flexible communication
+            <i class="fa-solid fa-arrow-right fa-blue"></i
+          ></a>
+        </div>
+      </section>
+      <!-- Video 3 -->
+      <section class="collaborationSections">
+        <div>
+          <video
+            autoplay
+            loop
+            src="/assets/vid/A connected team discussing work in multiple channels in the Slack app.webm"
+          ></video>
+        </div>
+        <div>
+          <h1>Bring your team together</h1>
+          <p>
+            At the heart of Slack are channels: organised spaces for everyone
+            and everything that you need for work. In channels, it’s easier to
+            connect across departments, offices, time zones and even other
+            companies.
+          </p>
+          <a href="#"
+            >Learn more about channels
+            <i class="fa-solid fa-arrow-right fa-blue"></i
+          ></a>
+        </div>
+      </section>
+    </section>
+    <!-- stats -->
+    <section class="stats">
+      <h1>Teams large and small rely on Slack</h1>
+      <p>
+        Slack securely scales up to support collaboration at the world’s biggest
+        companies.
+      </p>
+      <div>
+        <a href="#">MEET SLACK FOR ENTERPRISE</a>
+        <a
+          style="
+            background-color: white;
+            color: #541554;
+            box-shadow: inset 0 0 0 1px #541554;
+          "
+          href="#"
+          >TALK TO SALES</a
+        >
+      </div>
+      <div
+        style="
+          display: flex;
+          width: 90vw;
+          justify-content: space-around;
+          margin: 4vh auto;
+        "
+      >
+        <div class="statsTag">
+          <h1>85%</h1>
+          <p>of users say that Slack has improved communication*</p>
+        </div>
+        <div class="statsTag">
+          <h1>86%</h1>
+          <p>feel that their ability to work remotely has improved*</p>
+        </div>
+        <div class="statsTag">
+          <h1>88%</h1>
+          <p>feel more connected to their teams*</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statement -->
+    <section class="statement" style="display: flex">
+      <div>
+        <a href="https://www.youtube.com/embed/vG6joGGC4Os"
+          ><video
+            style="width: 50vw"
+            autoplay=""
+            loop=""
+            title="Video featuring a Slack customer, "
+            muted=""
+            playsinline=""
+          >
+            <source
+              src="https://a.slack-edge.com/1b4e2a3/marketing/img/homepage/true-prospects/customer-showcase/Vodafone_08.mp4"
+              type="video/mp4"
+            /></video
+        ></a>
+      </div>
+      <div style="padding: 2rem 2rem">
+        <p style="font-size: 2rem; font-style: italic; font-weight: lighter">
+          'Many technology employees were gravitating naturally to Slack. So we
+          followed our users to what has become one of our most important
+          tools.'
+        </p>
+        <h1 style="font-weight: 300; padding: 20px 0">
+          <b>Matt Beal</b><br />
+          Director of Technology Strategy and Architecture, Vodafone
+        </h1>
+        <a style="font-weight: 300" href="#"
+          >See more customer stories
+          <i class="fa-solid fa-arrow-right fa-blue"></i
+        ></a>
+      </div>
+      <br />
+    </section>
+    <p
+      style="text-align: center; color: grey; font-weight: 300; margin-top: 7vh"
+    >
+      * Weighted average. Based on 2,707 survey responses from weekly Slack
+      users in the US, UK, Australia and Canada with a ± 2% margin of error at
+      95% CI (December 2021).
+    </p>
+
+    <!-- Cards -->
+    <section class="cardsSection">
+      <h1>Take a deeper dive into a new way to work</h1>
+      <div class="cardsParent">
+        <div class="card">
+          <div>
+            <img src="/assets/img/card1.png" alt="" />
+            <h2>Event</h2>
+            <h1>Ready for the future of AI in Slack?</h1>
+          </div>
+          <div class="cardAction">
+            <div>WATCH ON DEMAND</div>
+            <div><i class="fa-solid fa-arrow-right fa-blue"></i></div>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <img src="/assets/img/card2.jpg" alt="" />
+            <h2>On demand</h2>
+            <h1>
+              Big things are launching. Relive the highlights of World Tour New
+              York!
+            </h1>
+          </div>
+          <div class="cardAction">
+            <div>WATCH NOW</div>
+            <div><i class="fa-solid fa-arrow-right fa-blue"></i></div>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <img src="/assets/img/card3.jpg" alt="" />
+            <h2>Customer story</h2>
+            <h1>How OpenAI expands ChatGPT with Slack.</h1>
+          </div>
+          <div class="cardAction">
+            <div>READ MORE</div>
+            <div><i class="fa-solid fa-arrow-right fa-blue"></i></div>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <img src="/assets/img/card4.jpg" alt="" />
+            <h2>Webinar</h2>
+            <h1>Top Slack tips to boost productivity</h1>
+          </div>
+          <div class="cardAction">
+            <div>WATCH NOW</div>
+            <div><i class="fa-solid fa-arrow-right fa-blue"></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final action -->
+    <section class="finalAction">
+      <div class="finalActionDiv">
+        <h1>See all that you can accomplish with Slack</h1>
+        <div>
+          <a
+            style="
+              background-color: white;
+              color: #541554;
+              box-shadow: inset 0 0 0 1px #541554;
+            "
+            href="#"
+            >TRY FOR FREE</a
+          >
+          <a href="#">TALK TO SALES</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="linksDiv">
+        <div>
+          <img style="width: 60px" src="/assets/img/favicon.png" alt="logo" />
+        </div>
+        <div>
+          <h1>WHY SLACK?</h1>
+          <li>Slack vs email</li>
+          <li>Channels</li>
+          <li>Engagement</li>
+          <li>Scale</li>
+          <li>Watch the demo</li>
+        </div>
+        <div>
+          <h1>PRODUCT</h1>
+          <li>Features</li>
+          <li>Integrations</li>
+          <li>Enterprise</li>
+          <li>Solutions</li>
+        </div>
+        <div>
+          <h1>PRICING</h1>
+          <li>Subscription</li>
+          <li>Paid vs free</li>
+        </div>
+        <div>
+          <h1>RESOURCES</h1>
+          <li>Partners</li>
+          <li>Developers</li>
+          <li>Community</li>
+          <li>Apps</li>
+          <li>Blog</li>
+          <li>Help Centre</li>
+          <li>Events</li>
+        </div>
+        <div>
+          <h1>COMPANY</h1>
+          <ul>
+            <li>About us</li>
+            <li>Leadership</li>
+            <li>News</li>
+            <li>Media kit</li>
+            <li>Careers</li>
+            <li>Slack shop</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footerBottomDiv">
+        <hr />
+        <div
+          style="display: flex; justify-content: space-between; margin: 2rem 0"
+        >
+          <div class="display:flex">
+            <ul class="footerList">
+              <li><a>Status</a></li>
+              <li><a>Privacy</a></li>
+              <li><a>Terms</a></li>
+              <li>
+                <a
+                  ><svg
+                    fill="none"
+                    class="privacy-icon"
+                    height="14"
+                    viewBox="0 0 30 14"
+                    width="30"
+                  >
+                    <path
+                      clip-rule="evenodd"
+                      d="m7.39998 12.8h6.80002l3.1-11.60005h-9.90002c-3.2 0-5.8 2.6-5.8 5.8 0 3.20005 2.6 5.80005 5.8 5.80005z"
+                      fill="#fff"
+                      fill-rule="evenodd"
+                    ></path>
+                    <path
+                      clip-rule="evenodd"
+                      d="m22.6 0h-15.19998c-3.9 0-6.999996 3.1-6.999996 7s3.099996 7 6.999996 7h15.19998c3.9 0 7-3.1 7-7s-3.2-7-7-7zm-20.99998 7c0-3.2 2.6-5.8 5.8-5.8h9.89998l-3.1 11.6h-6.79998c-3.2 0-5.8-2.6-5.8-5.8z"
+                      fill="#06f"
+                      fill-rule="evenodd"
+                    ></path>
+                    <path
+                      d="m24.6001 4.0001c.2.2.2.6 0 .8l-2.1 2.2 2.2 2.2c.2.2.2.6 0 .8s-.6.2-.8 0l-2.2-2.2-2.2 2.2c-.2.2-.6.2-.8 0s-.2-.6 0-.8l2.1-2.2-2.2-2.2c-.2-.2-.2-.6 0-.8s.6-.2.8 0l2.2 2.2 2.2-2.2c.2-.2.6-.2.8 0z"
+                      fill="#fff"
+                    ></path>
+                    <path
+                      d="m12.7 4.09995c.2.2.3.6.1.8l-4.2 4.9c-.1.1-.2.2-.3.2-.2.10005-.5.10005-.7-.1l-2.2-2.2c-.2-.2-.2-.6 0-.8s.6-.2.8 0l1.8 1.7 3.8-4.5c.2-.2.6-.2.9 0z"
+                      fill="#06f"
+                    ></path></svg
+                  >Your privacy choices</a
+                >
+              </li>
+              <li><a>Contact us</a></li>
+              <li>
+                <i class="fa-solid fa-globe"></i> Change region
+                <i class="fa-solid fa-angle-down"></i>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul style="list-style: none">
+              <li
+                style="
+                  display: inline;
+                  float: left;
+                  color: #4285f4;
+                  padding: 0 10px;
+                "
+              >
+                <i style="" class="fa-solid fa-cloud-arrow-down"></i> Download
+                Stack
+              </li>
+              <i style="padding: 0 2px" class="fa-brands fa-twitter"></i>
+              <i style="padding: 0 2px" class="fa-brands fa-facebook"></i>
+              <i style="padding: 0 2px" class="fa-brands fa-youtube"></i>
+              <i style="padding: 0 2px" class="fa-brands fa-linkedin"></i>
+            </ul>
+          </div>
+        </div>
+        <h1 style="font-weight: 300; font-size: 12px">
+          ©2023 Slack Technologies, LLC, a Salesforce company. All rights
+          reserved. Various trademarks held by their respective owners.
+        </h1>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
