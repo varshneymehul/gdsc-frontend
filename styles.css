@@ -106,7 +106,7 @@ header {
   background-color: #541554;
   flex-direction: row;
   justify-content: space-between;
-  padding: 3vh 7.5vw;
+  padding: 3vh 5vw;
   margin: auto;
 }
 #navbarLater {
@@ -534,7 +534,7 @@ header {
   display: inline;
   float: left;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1084~px) {
   .navbarInitial {
     width: 100vw;
     padding: 2vh 0;
@@ -727,5 +727,10 @@ header {
     margin: 20px 0;
     display: flex;
     justify-content: space-around;
+  }
+}
+@media only screen and (max-width: 1216px) and (min-width: 1084px) {
+  .talkToSales {
+    display: none;
   }
 }
