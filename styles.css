@@ -197,13 +197,72 @@ header {
   border-width: 5px;
   text-decoration: none;
 }
+.navbarToggle {
+  display: none;
+  cursor: pointer;
+}
+/* The side navigation menu */
+.sidenav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 100; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: white; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 10px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
 
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 20px 8px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #000;
+  display: block;
+  transition: 0.3s;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 25px;
+}
+.sidenavArrowLinks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+.sidenavActionButtons {
+  display: flex;
+  margin: 20px auto;
+  width: 100%;
+}
+.sidenavActionButtons a {
+  border-radius: 3px !important;
+  -webkit-border-radius: 3px !important;
+  -moz-border-radius: 3px !important;
+  -ms-border-radius: 3px !important;
+  -o-border-radius: 3px !important;
+  text-align: center;
+  font-size: 16px !important;
+  width: 50vw;
+  margin: 2.5vw 1vw 2.5vw 1vw;
+  padding: 10px 20px;
+}
 .headerSection {
   margin: auto;
   display: flex;
   width: 83vw;
   height: 55vh;
-
   justify-content: center;
 }
 .headerSectionText {
@@ -489,6 +548,13 @@ header {
   }
   #navbarLater {
     display: none !important;
+  }
+  .navbarToggle {
+    display: block;
+    padding: 0 15px 0 0;
+  }
+  .navbarToggle > i {
+    padding: 0 10px;
   }
   .headerSection {
     display: flex;

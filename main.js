@@ -5,3 +5,11 @@ window.addEventListener("scroll", function (e) {
     document.getElementById("navbarLater").style.display = "none";
   }
 });
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100vw";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
