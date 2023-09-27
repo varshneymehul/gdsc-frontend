@@ -54,7 +54,7 @@
         </div>
 
         <!-- Nav items -->
-        <div>
+        <div class="navbarLinks">
           <a href="#"
             >Features
             <i class="fa-angle-down fa-solid" style="color: white"></i>
@@ -158,7 +158,10 @@
           href="#"
           >TALK TO SALES</a
         >
-        <a id="demo" style="color: white; background-color: #541554" href="#"
+        <a
+          id="demo"
+          style="color: white; background-color: #541554; margin-right: 20px"
+          href="#"
           >TRY FOR FREE</a
         >
       </div>
@@ -174,13 +177,13 @@
           ></video>
         </div>
         <div class="headerSectionText">
-          <h1>Made for people</h1>
-          <h1 style="color: #ecb22f">Built for productivity</h1>
+          <h1>Made for people.</h1>
+          <h1 style="color: #ecb22f">Built for productivity.</h1>
           <p>
             Connect the right people, find anything that you need and automate
             the rest. That’s work in Slack, your productivity platform.
           </p>
-          <div>
+          <div class="headerButtonContainer">
             <a class="headerButton" href="#">SIGN UP WITH EMAIL ADDRESS</a>
             <a
               style="
@@ -220,21 +223,29 @@
             width: 70vw;
             margin: auto;
           "
+          class="mainContentLogosDiv"
         >
-          <img src="assets/img/logos/logo-seek@2x.png" alt="seek" /><img
-            src="assets/img/logos/logo-xero@2x.png"
-            alt="xero"
-          /><img src="assets/img/logos/rea@2x.png" alt="rea" /><img
-            src="assets/img/logos/rmit@2x.png"
-            alt="rmit"
-          /><img src="assets/img/logos/logo-ibm@2x.png" alt="ibm" /><img
-            src="assets/img/logos/deliveroo@2x.png"
-            alt="deliveroo"
-          />
+          <div><img src="assets/img/logos/logo-seek@2x.png" alt="seek" /></div>
+          <div><img src="assets/img/logos/logo-xero@2x.png" alt="xero" /></div>
+          <div><img src="assets/img/logos/rea@2x.png" alt="rea" /></div>
+          <div><img src="assets/img/logos/rmit@2x.png" alt="rmit" /></div>
+          <div><img src="assets/img/logos/logo-ibm@2x.png" alt="ibm" /></div>
+          <div>
+            <img src="assets/img/logos/deliveroo@2x.png" alt="deliveroo" />
+          </div>
         </div>
       </section>
       <!-- Video 1 -->
       <section class="collaborationSections">
+        <div class="mobileVideosDiv">
+          <video
+            class="mobileVideos"
+            src="assets/vid/Mob - Using the Workday integration to quickly file an expense report in the Slack app.webm"
+            autoplay
+            muted
+            loop
+          ></video>
+        </div>
         <div>
           <video
             autoplay
@@ -243,7 +254,7 @@
             src="assets/vid/Using the Workday integration to quickly file an expense report in the Slack app.webm"
           ></video>
         </div>
-        <div>
+        <div class="collaborationSectionsText">
           <h1>Move faster with your tools in one place</h1>
           <p>
             Automate away routine tasks with the power of generative AI and
@@ -258,7 +269,16 @@
       </section>
       <!-- Video 2 -->
       <section class="collaborationSections">
-        <div style="margin-left: -4vw">
+        <div class="mobileVideosDiv" style="width: 100vw; text-align: right">
+          <video
+            class="mobileVideos"
+            src="assets/vid/Mob - A user starting a huddle and recording a video clip with the Slack app (1).webm"
+            autoplay
+            muted
+            loop
+          ></video>
+        </div>
+        <div>
           <video
             autoplay
             muted
@@ -266,7 +286,7 @@
             src="assets/vid/A user starting a huddle and recording a video clip with the Slack app.webm"
           ></video>
         </div>
-        <div style="margin-left: -4vw; margin-right: 5vw">
+        <div class="collaborationSectionsText">
           <h1>Choose how you want to work</h1>
           <p>
             In Slack, you’ve got all the flexibility to work when, where and how
@@ -281,6 +301,15 @@
       </section>
       <!-- Video 3 -->
       <section class="collaborationSections">
+        <div class="mobileVideosDiv">
+          <video
+            class="mobileVideos"
+            src="assets/vid/Mob - A connected team discussing work in multiple channels in the Slack app (1).webm"
+            autoplay
+            muted
+            loop
+          ></video>
+        </div>
         <div>
           <video
             autoplay
@@ -289,7 +318,7 @@
             src="assets/vid/A connected team discussing work in multiple channels in the Slack app.webm"
           ></video>
         </div>
-        <div>
+        <div class="collaborationSectionsText">
           <h1>Bring your team together</h1>
           <p>
             At the heart of Slack are channels: organised spaces for everyone
@@ -311,7 +340,7 @@
         Slack securely scales up to support collaboration at the world’s biggest
         companies.
       </p>
-      <div>
+      <div class="statsButton">
         <a href="#">MEET SLACK FOR ENTERPRISE</a>
         <a
           style="
@@ -323,14 +352,7 @@
           >TALK TO SALES</a
         >
       </div>
-      <div
-        style="
-          display: flex;
-          width: 90vw;
-          justify-content: space-around;
-          margin: 4vh auto;
-        "
-      >
+      <div class="statsPercentage">
         <div class="statsTag">
           <h1>85%</h1>
           <p>of users say that Slack has improved communication*</p>
@@ -383,11 +405,17 @@
       <br />
     </section>
     <p
-      style="text-align: center; color: grey; font-weight: 300; margin-top: 7vh"
+      style="
+        text-align: center;
+        color: grey;
+        font-weight: 300;
+        margin-top: 6vh;
+        margin-bottom: 2vh;
+      "
     >
-      * Weighted average. Based on 2,707 survey responses from weekly Slack
-      users in the US, UK, Australia and Canada with a ± 2% margin of error at
-      95% CI (December 2021).
+      *Weighted average. Based on 2,707 survey responses from weekly Slack users
+      in the US, UK, Australia and Canada with a ± 2% margin of error at 95% CI
+      (December 2021).
     </p>
 
     <!-- Cards -->
@@ -448,7 +476,7 @@
     <section class="finalAction">
       <div class="finalActionDiv">
         <h1>See all that you can accomplish with Slack</h1>
-        <div>
+        <div class="finalActionButtonsDiv">
           <a
             style="
               background-color: white;
@@ -465,7 +493,7 @@
 
     <footer>
       <div class="linksDiv">
-        <div>
+        <div class="footerLogo">
           <img style="width: 60px" src="assets/img/favicon.png" alt="logo" />
         </div>
         <div>
@@ -513,9 +541,10 @@
       <div class="footerBottomDiv">
         <hr />
         <div
+          class="allFooterLinks"
           style="display: flex; justify-content: space-between; margin: 2rem 0"
         >
-          <div class="display:flex">
+          <div class="leftFooterLinks">
             <ul class="footerList">
               <li><a>Status</a></li>
               <li><a>Privacy</a></li>
@@ -559,26 +588,22 @@
               </li>
             </ul>
           </div>
-          <div>
-            <ul style="list-style: none">
-              <li
-                style="
-                  display: inline;
-                  float: left;
-                  color: #4285f4;
-                  padding: 0 10px;
-                "
-              >
+          <div class="rightFooterLinks">
+            <ul>
+              <li style="color: #1264a3">
                 <i style="" class="fa-solid fa-cloud-arrow-down"></i> Download
                 Stack
               </li>
-              <i style="padding: 0 2px" class="fa-brands fa-twitter"></i>
-              <i style="padding: 0 2px" class="fa-brands fa-facebook"></i>
-              <i style="padding: 0 2px" class="fa-brands fa-youtube"></i>
-              <i style="padding: 0 2px" class="fa-brands fa-linkedin"></i>
+              <li>
+                <i style="padding: 0 2px" class="fa-brands fa-twitter"></i>
+                <i style="padding: 0 2px" class="fa-brands fa-facebook"></i>
+                <i style="padding: 0 2px" class="fa-brands fa-youtube"></i>
+                <i style="padding: 0 2px" class="fa-brands fa-linkedin"></i>
+              </li>
             </ul>
           </div>
         </div>
+        <br />
         <h1 style="font-weight: 300; font-size: 12px">
           ©2023 Slack Technologies, LLC, a Salesforce company. All rights
           reserved. Various trademarks held by their respective owners.

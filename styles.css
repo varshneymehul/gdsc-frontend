@@ -115,20 +115,28 @@ header {
   z-index: 100;
   background-color: white;
   border-radius: 50px;
-  display: show;
+  display: none;
   flex-direction: row;
   justify-content: space-between;
   padding: 3vh 0;
   margin: auto;
   top: 20px;
-
   width: 85vw;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
+  transition: all 0.5s ease;
+  height: auto;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
 }
-.show{
+#navbarLater:target {
+  max-height: 100vh;
+}
+.show {
   display: flex;
 }
 #logoAndItems {
@@ -194,7 +202,8 @@ header {
   margin: auto;
   display: flex;
   width: 83vw;
-  height: 65vh;
+  height: 55vh;
+
   justify-content: center;
 }
 .headerSectionText {
@@ -206,7 +215,7 @@ header {
   max-width: 700px;
 }
 .headerSection h1 {
-  max-width: 38.025rem;
+  font-size: 4rem;
   color: white;
 }
 .headerSection p {
@@ -252,6 +261,12 @@ header {
   padding: 2vh 3vw;
   width: 40vw;
 }
+.mobileVideos {
+  display: none;
+}
+.mobileVideosDiv {
+  display: none;
+}
 .collaborationSections div {
   padding: 0 3vw;
 }
@@ -276,8 +291,8 @@ header {
   margin-top: 2rem;
   margin-bottom: 3rem;
 }
-.stats div a {
-  background-color: #541554;
+.statsButton a {
+  background-color: #611e69;
   text-decoration: none;
   border-radius: 2px;
   margin: 30px 10px;
@@ -287,6 +302,12 @@ header {
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
   -o-border-radius: 2px;
+}
+.statsPercentage {
+  display: flex;
+  width: 90vw;
+  justify-content: space-around;
+  margin: 4vh auto;
 }
 .statsTag {
   width: 15vw;
@@ -421,6 +442,7 @@ header {
 }
 .linksDiv li:hover {
   cursor: pointer;
+  color: #1264a3;
 }
 .footerBottomDiv {
   margin: 0 8vw 3vh;
@@ -429,17 +451,215 @@ header {
   margin: 0 0 20px 0;
 }
 .footerList li {
+  cursor: pointer;
   display: inline;
   float: left;
+}
+.footerList li:hover {
+  color: #1264a3;
+}
+.rightFooterLinks li {
+  padding-left: 5px;
+}
+.rightFooterLinks li i:hover {
+  color: #1264a3;
 }
 .footerList li a {
   padding: 0 1rem 0 0;
 }
-@media screen and (min-width: 64rem) {
+.rightFooterLinks ul {
+  list-style: none;
+}
+.rightFooterLinks ul li {
+  cursor: pointer;
+  display: inline;
+  float: left;
+}
+@media only screen and (max-width: 768px) {
+  .navbarInitial {
+    width: 100vw;
+    padding: 2vh 0;
+    margin: 0;
+  }
+  .navbarInitial .navbarLinks {
+    display: none;
+  }
+  .navbarInitial #actionButtons {
+    display: none;
+  }
+  #navbarLater {
+    display: none !important;
+  }
+  .headerSection {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    height: auto;
+    margin: auto;
+    width: 100vw;
+  }
+  .headerSectionText {
+    margin: auto;
+    text-align: center;
+  }
   .headerSection h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .headerSection p {
-    font-size: 1.25rem;
+    font-size: 20px;
+  }
+  .headerSection video {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+  .headerButtonContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .headerButton {
+    margin: 5px 10px;
+    padding: 20px !important;
+  }
+  .mainContentLogos {
+    padding: 5vw 0;
+  }
+  .mainContentLogosDiv {
+    width: 100vw !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .mainContentLogosDiv img {
+    padding: 10px;
+  }
+  .collaborationSections {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+  }
+  .collaborationSections div {
+    padding: 0;
+    margin: 0;
+  }
+  .collaborationSectionsText {
+    padding: 0 5vw !important;
+  }
+  .collaborationSections div h1 {
+    font-size: 2.5rem;
+  }
+  .collaborationSections div p {
+    font-size: 20px;
+    font-weight: lighter;
+    margin: 20px 0;
+  }
+  .collaborationSections div video {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+  .mobileVideos {
+    display: unset !important;
+    width: 80vw !important;
+  }
+  .mobileVideosDiv {
+    display: unset !important;
+  }
+  .stats h1 {
+    font-size: 2rem;
+    padding: 0 20px;
+  }
+  .stats p {
+    padding: 0 20px;
+    margin-bottom: 2rem;
+  }
+  .statsButton {
+    display: flex;
+    flex-direction: column;
+  }
+  .statsButton a {
+    margin: 10px;
+    padding: 20px;
+  }
+  .statsPercentage {
+    flex-direction: column;
+  }
+  .statsTag {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 2vh !important;
+  }
+  .statsTag p,
+  .statsTag h1 {
+    text-align: center;
+  }
+  .statsTag h1 {
+    font-size: 3rem;
+  }
+  .statsTag p {
+    width: 40vw;
+    margin: auto;
+  }
+
+  .statement {
+    flex-direction: column;
+  }
+  .statement video {
+    width: 90vw !important;
+    border-bottom-right-radius: 25vw;
+    border-top-right-radius: 25vw;
+  }
+  .statement p {
+    font-size: 1.5rem !important;
+  }
+  .cardsParent {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .card {
+    width: 50vw;
+    margin: 10px;
+  }
+  .finalActionDiv {
+    position: relative;
+    top: 0%;
+  }
+  .finalAction h1 {
+    padding: 1rem;
+  }
+  .linksDiv {
+    width: 90vw;
+    margin: auto;
+    padding: 2vw 0;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    justify-content: space-between;
+  }
+  .footerLogo {
+    grid-column-start: 1;
+    grid-column-end: 6;
+  }
+  .allFooterLinks {
+    display: block !important;
+  }
+  .footerBottomDiv {
+    margin: 0 3vw 3vh;
+  }
+  .footerList li {
+    display: block !important;
+    padding: 2vh 0;
+
+    float: none !important;
+  }
+  .rightFooterLinks ul li {
+    display: block;
+    float: none !important;
+  }
+  .rightFooterLinks ul li:nth-last-child(1) {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
   }
 }

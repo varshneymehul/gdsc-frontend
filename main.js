@@ -1,7 +1,7 @@
 window.addEventListener("scroll", function (e) {
-  if (windows.scrollY > 1000) {
-    this.document.getElementById(".navBarLater").style.display = "flex";
+  if (window.scrollY > 500) {
+    document.getElementById("navbarLater").style.display = "flex";
   } else {
-    document.getElementById("logo").style.display = "none";
+    document.getElementById("navbarLater").style.display = "none";
   }
 });
